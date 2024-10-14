@@ -1,0 +1,76 @@
+body {
+    background-color: #2b2b2b; /* Dark gothic background */
+    font-family: 'UnifrakturCook', cursive, 'Comic Sans MS', sans-serif; /* Gothic with a playful touch */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #4b004b; /* Deep, dark purple-pink */
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+}
+
+.display {
+    background-color: #2e2e2e; /* Dark display background */
+    color: #ff66cc; /* Bright pink text */
+    border: 2px solid #ff99cc; /* Light pink border */
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 2em;
+    margin-bottom: 15px;
+    height: 50px;
+    overflow: hidden;
+}
+
+button {
+    background-color: #660066; /* Dark pink-purple button color */
+    color: #ffccff; /* Soft pastel pink text */
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+button:hover {
+    background-color: #ff66cc; /* Bright pink on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly shrink when clicked */
+}
+
+button.operator {
+    background-color: #8b008b; /* Darker pink for operator buttons */
+}
+
+button.clear {
+    background-color: #cc0099; /* Vivid pink for the clear button */
+}
+
+button.equals {
+    background-color: #e60073; /* Dark hot pink for the equals button */
+}
+
+button.backspace {
+    background-color: #d9004c; /* Dark red-pink for backspace */
+}
+
+button.decimal {
+    background-color: #993366; /* Deep mauve for the decimal */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
